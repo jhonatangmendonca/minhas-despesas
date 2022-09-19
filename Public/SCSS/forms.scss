@@ -1,0 +1,400 @@
+@import 'MIXINS/_Colors.scss';
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: $cor-branco-1;
+    margin: 0 auto;
+}
+
+
+/* -------------------------------------- */
+
+
+/*  SCSS  */
+
+
+/* -------------------------------------- */
+
+.new-form {
+    nav {
+        a {
+            color: $cor-branco-1 !important;
+            font-weight: 600;
+        }
+    }
+    h1 {
+        font-size: 25px;
+    }
+    header {
+        box-shadow: 0 1px 5px 1px $cor-cinza-1;
+        background-color: $cor-cinza-4;
+        z-index: 10;
+        top: 0;
+        min-width: 100%;
+        overflow: hidden;
+        position: fixed;
+        .navbar-toggler {
+            border-color: whitesmoke;
+            outline: none;
+        }
+        .cabecalho-form {
+            justify-content: center;
+            color: $cor-branco-1;
+            align-items: center;
+            display: flex;
+            height: 60px;
+            h1 {
+                margin-top: 0.5em;
+                font-weight: 600;
+                font-size: 1.3em;
+            }
+            div:nth-child(2) {
+                text-align: center;
+                width: 70%;
+                input {
+                    background-color: transparent;
+                    font-weight: 700;
+                    border: none;
+                }
+            }
+            button {
+                background-color: transparent;
+                text-decoration: none;
+                cursor: pointer;
+                border: none;
+                outline: none;
+            }
+            img {
+                width: 20px;
+            }
+        }
+        div[id='DataAnoDespesas'] {
+            height: 40px;
+        }
+    }
+    .header2 {
+        visibility: hidden;
+        position: relative;
+        margin-bottom: 20px;
+    }
+    main[id='novaDespesa'],
+    main[id='detalhamento'],
+    main[id='minhasDespesas'] {
+        max-width: 1200px;
+        padding-bottom: 70px;
+        margin: 0 auto;
+        position: relative;
+        img:last-child {
+            max-width: 70%;
+        }
+        input {
+            font-weight: 700;
+            color: $cor-cinza-2;
+        }
+    }
+    main[id='usuario'] {
+        max-width: 1200px;
+        top: 115px;
+        padding-bottom: 70px;
+        margin: 0 auto;
+        position: relative;
+        color: $cor-cinza-1;
+        font-weight: 700;
+        .btn-link {
+            text-decoration: none;
+            font-weight: 700;
+        }
+        input {
+            font-weight: 700;
+            color: $cor-cinza-2;
+        }
+        .btn-success {
+            color: white;
+        }
+    }
+    main[id='minhasDespesasGrid'] {
+        max-width: 1920px;
+        padding-bottom: 60px;
+        margin: 0 auto;
+        position: relative;
+        table {
+            color: $cor-cinza-1;
+            font-weight: 500;
+            margin-bottom: 0;
+            thead {
+                tr {
+                    background-color: $cor-cinza-3;
+                    border-radius: 0.2em;
+                    padding-top: 0.4rem;
+                    padding-bottom: 0.4rem;
+                }
+                th {
+                    border-right: 1px solid #303030;
+                    border-left: 0;
+                    border-color: transparent;
+                    padding-left: 0.5em;
+                    & {
+                        border-left: 1px solid #b1b1b1;
+                        &:first-child {
+                            border: 0;
+                        }
+                    }
+                }
+            }
+            tbody {
+                tr:hover {
+                    background-color: #ece7e7d8;
+                }
+                td {
+                    padding-left: 0.5em;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+    a {
+        text-decoration: none !important;
+        cursor: pointer;
+        display: block;
+    }
+    footer {
+        box-shadow: 0 1px 5px 1px $cor-cinza-1;
+        background-color: $cor-cinza-4;
+        position: fixed;
+        height: 60px;
+        width: 100%;
+        bottom: 0;
+        .text-label {
+            font-weight: 700;
+        }
+        input {
+            font-weight: 600;
+            color: white;
+            cursor: pointer;
+            height: 60px;
+            border: 0;
+            &#BntSalvar,
+            &#BntCadastrar {
+                background-color: $cor-verde-1;
+                font-weight: 700;
+            }
+            &#BntExcluir {
+                background-color: $cor-vermelha-1;
+                font-weight: 700;
+            }
+        }
+        &.footer-despesas {
+            align-content: center;
+            color: $cor-branco-1;
+            display: grid;
+            div:first-child {
+                color: $cor-cinza-2 !important;
+            }
+            div {
+                display: flex;
+                color: $cor-branco-1 !important;
+                justify-content: space-between;
+                align-content: space-between;
+                margin-right: 10px;
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+
+/* -------------------------------------- */
+
+
+/*  CLASSES */
+
+
+/* -------------------------------------- */
+
+.text-label {
+    font-weight: 600;
+    color: $cor-cinza-1;
+}
+
+.card-header {
+    color: $cor-branco-1;
+    font-weight: 700;
+    &.parcela-paga {
+        background-color: $cor-verde-1;
+    }
+    &.parcela-em-dia {
+        background-color: #3f74c5;
+    }
+    &.parcela-vencida {
+        background-color: $cor-vermelha-1;
+    }
+    &.parcela-vence-hoje {
+        background-color: #b69140;
+    }
+    &.parcela-congelada {
+        background-color: $cor-cinza-2;
+    }
+}
+
+.despesa:hover .parcela-vence-hoje {
+    background-color: #a57d25;
+}
+
+.despesa:hover .parcela-congelada {
+    background-color: #696f77;
+}
+
+.despesa:hover .parcela-vencida {
+    background-color: #993a3a;
+}
+
+.despesa:hover .parcela-em-dia {
+    background-color: #204883;
+}
+
+.despesa:hover .parcela-paga {
+    background-color: #3e6d38;
+}
+
+.list-group-item {
+    span {
+        color: $cor-cinza-1;
+        font-weight: 600;
+    }
+}
+
+.item-hide {
+    display: none !important;
+}
+
+.despesa-paga {
+    color: $cor-verde-1;
+    font-weight: 900;
+}
+
+.despesa-em-dia {
+    color: $cor-azul-1;
+    font-weight: 900;
+}
+
+.despesa-vencida {
+    color: $cor-vermelha-1;
+    font-weight: 900;
+}
+
+.despesa-vence-hoje {
+    color: #a57d25;
+    font-weight: 900;
+}
+
+.despesa-congelada {
+    color: #5ab1e4;
+    font-weight: 900;
+}
+
+.btn-sucesso {
+    background-color: $cor-verde-1;
+    font-weight: 900;
+    font-size: 15px;
+    color: white;
+    width: 125px;
+    padding: 10px;
+}
+
+.text-destaque {
+    color: $cor-azul-1;
+    font-weight: 600;
+}
+
+.text-destaque-cinza {
+    color: $cor-cinza-1;
+    font-weight: 600;
+}
+
+.col-1-25 {
+    max-width: 11.41667%;
+    flex: 11.41667%;
+}
+
+.bg-preto {
+    background-color: $cor-preto-1;
+    font-weight: 900;
+}
+
+.bg-vermelho {
+    background-color: $cor-vermelha-1;
+    font-weight: 900;
+}
+
+.bg-azul {
+    background-color: $cor-azul-1;
+    font-weight: 900;
+}
+
+.bg-verde {
+    background-color: $cor-verde-1;
+    font-weight: 900;
+}
+
+.bg-laranja {
+    background-color: $cor-laranja-1;
+    font-weight: 900;
+}
+
+.bg-cinza {
+    background-color: $cor-cinza-1;
+    font-weight: 900;
+}
+
+.btn-mes {
+    border: 1px solid #fdfdfd73;
+    &:hover {
+        border-color: #ffffff83;
+        background-color: #eee8e883;
+    }
+}
+
+.card:hover {
+    border: 1px solid rgb(173, 169, 169);
+}
+
+
+/* Largura da barra de rolagem */
+
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+
+/* -------------------------------------- */
+
+
+/*  TRATAMENTO DA BARRA DE ROLAGEM */
+
+
+/* -------------------------------------- */
+
+
+/* Fundo da barra de rolagem */
+
+::-webkit-scrollbar-track-piece {
+    background-color: $cor-cinza-4;
+}
+
+
+/* Cor do indicador de rolagem */
+
+::-webkit-scrollbar-thumb:vertical,
+::-webkit-scrollbar-thumb:horizontal {
+    background-color: $cor-verde-1
+}
+
+
+/* Cor do indicador de rolagem - ao passar o mouse */
+
+::-webkit-scrollbar-thumb:vertical:hover,
+::-webkit-scrollbar-thumb:horizontal:hover {
+    background-color: rgb(255, 51, 51)
+}

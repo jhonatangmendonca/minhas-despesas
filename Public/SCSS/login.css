@@ -1,0 +1,66 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #345D7E;
+}
+
+.new-form {
+  width: 100%;
+}
+
+.new-form main form div:first-child {
+  -webkit-box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.5);
+  width: 350px;
+  margin: 0 auto;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  margin-top: 100px;
+}
+
+.new-form main form img {
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.new-form main form .btn-sucesso {
+  background-color: #3CB371;
+  font-weight: 700;
+  font-size: 15px;
+  color: white;
+  width: 125px;
+  padding: 5px;
+}
+
+.new-form main form a {
+  font-weight: 700;
+  font-size: 15px;
+  width: 125px;
+  padding: 5px;
+}
+
+.new-form main form input {
+  border: 0;
+  border-radius: 0;
+  border-bottom: 0.5px solid #345D7E;
+  background-color: whitesmoke;
+  padding: 0;
+}
+
+.new-form main form input:focus {
+  background-color: whitesmoke;
+  border-color: none !important;
+  outline: 0;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+/*# sourceMappingURL=login.css.map */

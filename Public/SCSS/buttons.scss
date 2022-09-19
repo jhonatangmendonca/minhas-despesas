@@ -1,0 +1,218 @@
+    @import 'MIXINS/_Colors.scss';
+    .btnVoltar {
+        background-image: url(../IMG/Botoes/esquerda.svg);
+        background-repeat: no-repeat;
+        background-size: 17px 20px;
+        padding-left: 2.2em !important;
+        padding-right: .9em !important;
+        background-position: left .5em center;
+        font-size: .875rem !important;
+    }
+    
+    .btnAdicionar {
+        background-image: url(../IMG/Botoes/addWhite.svg);
+        background-repeat: no-repeat;
+        background-size: 20px 20px;
+        padding-left: 2.2em !important;
+        padding-right: .9em !important;
+        background-position: left .5em center;
+        font-size: .875rem !important;
+    }
+    
+    .btnUsuario {
+        background-image: url(../IMG/Botoes/user.svg);
+        background-repeat: no-repeat;
+        background-size: 19px 20px;
+        padding-left: 2.2em !important;
+        padding-right: .9em !important;
+        background-position: left .5em center;
+        font-size: .875rem !important;
+    }
+    
+    .btnDescricao {
+        background-image: url(../IMG/Botoes/descricao.svg);
+        background-repeat: no-repeat;
+        background-size: 19px 20px;
+        padding-left: 2.2em !important;
+        padding-right: .9em !important;
+        background-position: left .5em center;
+        font-size: .875rem !important;
+    }
+    
+    .btnMensagem {
+        background-image: url(../IMG/Botoes/mensagem.svg);
+        background-repeat: no-repeat;
+        background-size: 19px 20px;
+        padding-left: 2.2em !important;
+        padding-right: .9em !important;
+        background-position: left .5em center;
+        font-size: .875rem !important;
+    }
+    
+    .btnAdm {
+        background-image: url(../IMG/Botoes/admin.svg);
+        background-repeat: no-repeat;
+        background-size: 19px 20px;
+        padding-left: 2.2em !important;
+        padding-right: .9em !important;
+        background-position: left .5em center;
+        font-size: .875rem !important;
+    }
+    
+    .btnMoney {
+        background-image: url(../IMG/Botoes/money.svg);
+        background-repeat: no-repeat;
+        background-size: 21px 21px;
+        padding-left: 2.2em !important;
+        padding-right: .9em !important;
+        background-position: left .5em center;
+        font-size: .875rem !important;
+    }
+    
+    .btnLembrete {
+        background-image: url(../IMG/Botoes/lembrete.svg);
+        background-repeat: no-repeat;
+        background-size: 21px 21px;
+        padding-left: 2.2em !important;
+        padding-right: .9em !important;
+        background-position: left .5em center;
+        font-size: .875rem !important;
+    }
+    
+    .btnSair {
+        background-image: url(../IMG/Botoes/cancel-24px.svg);
+        background-repeat: no-repeat;
+        background-size: 19px 20px;
+        padding-left: 2.2em !important;
+        padding-right: .9em !important;
+        background-position: left .5em center;
+        font-size: .875rem !important;
+    }
+    
+    .btnEditar {
+        background-image: url(../IMG/Botoes/edit.svg);
+        background-repeat: no-repeat;
+        background-size: 19px 20px;
+        padding-left: 2.2em !important;
+        padding-right: .9em !important;
+        background-position: left .5em center;
+        font-size: .875rem !important;
+    }
+    
+    .btnUsuario {
+        background-image: url(../IMG/Botoes/admin.svg);
+        background-repeat: no-repeat;
+        background-size: 19px 20px;
+        padding-left: 2.2em !important;
+        padding-right: .9em !important;
+        background-position: left .5em center;
+        font-size: .875rem !important;
+    }
+    
+    .title {
+        padding-top: 10px !important;
+        margin-bottom: -0.2rem !important;
+    }
+    
+    .imgLogin {
+        width: 25px;
+        rotate: 50%;
+    }
+    
+    .btnVerde {
+        background-color: #3CB371 !important;
+        border-color: #3CB371 !important;
+        &:hover {
+            background-color: #239757 !important;
+            border-color: #239757 !important;
+        }
+    }
+    
+    .btnVermelho {
+        background-color: #CD5C5C !important;
+        border-color: #CD5C5C !important;
+        &:hover {
+            background-color: #c44141 !important;
+            border-color: #c44141 !important;
+        }
+    }
+    
+    .btnAzul {
+        background-color: #4069b6 !important;
+        border-color: #4069b6 !important;
+        &:hover {
+            background-color: #2457b4 !important;
+            border-color: #2457b4 !important;
+        }
+    }
+    
+    .btnLaranja {
+        background-color: #b69140 !important;
+        border-color: #b69140 !important;
+        &:hover {
+            background-color: #a37520 !important;
+            border-color: #a37520 !important;
+        }
+    }
+    
+    .btnRoxo {
+        background-color: #9540b6 !important;
+        border-color: #9540b6 !important;
+        &:hover {
+            background-color: #6f20a3 !important;
+            border-color: #6f20a3 !important;
+        }
+    }
+    
+    .btnCinza {
+        background-color: #a1a1a1 !important;
+        border-color: #a1a1a1 !important;
+        &:hover {
+            background-color: #7e7e7e !important;
+            border-color: #7e7e7e !important;
+        }
+    }
+    
+    .btnData {
+        background-color: rgb(241, 241, 241) !important;
+        border-color: rgb(241, 241, 241) !important;
+        color: white !important;
+        &:hover {
+            background-color: #d3d3d3 !important;
+            border-color: #bbbbbb !important;
+        }
+    }
+    
+    .btn-pagar-grid {
+        background-image: url(../IMG/Botoes/check.svg);
+        background-repeat: no-repeat;
+        background-size: 36px 39px;
+        &:hover {
+            background-image: url(../IMG/Botoes/pay.svg);
+        }
+    }
+    
+    .btn-estornar-grid {
+        background-image: url(../IMG/Botoes/pay.svg);
+        background-repeat: no-repeat;
+        background-size: 36px 39px;
+        &:hover {
+            background-image: url(../IMG/Botoes/eliminar-bold-red.svg);
+            background-size: 23px 23px;
+            background-position: 55%;
+        }
+    }
+    
+    .btn-excluir-item {
+        color: rgba(255, 255, 255, .85) !important;
+        &:hover {
+            color: rgb(255, 255, 255) !important;
+        }
+    }
+    
+    .btn-ver-detalhes {
+        color: rgba(255, 255, 255, .85) !important;
+        &:hover {
+            color: rgb(255, 255, 255) !important;
+        }
+    }

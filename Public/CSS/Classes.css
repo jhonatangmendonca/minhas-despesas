@@ -1,0 +1,16 @@
+.item-hide {
+    display: none;
+}
+
+.text-destaque {
+    font-weight: 500;
+}
+
+.text-gray {
+    color: rgb(71, 68, 68) !important;
+}
+
+main {
+    max-width: 1400px;
+    margin: 0 auto;
+}

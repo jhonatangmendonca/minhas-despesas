@@ -1,0 +1,158 @@
+body {
+  background-color: #181a1b !important;
+}
+
+ul#slide-out {
+  background-color: #56565661 !important;
+}
+
+ul#slide-out li:not(#usuarios) {
+  color: white !important;
+}
+
+ul#slide-out li:not(#usuarios) b,
+ul#slide-out li:not(#usuarios) i,
+ul#slide-out li:not(#usuarios) a {
+  color: white !important;
+}
+
+ul#slide-out li:not(#usuarios):hover {
+  color: #000 !important;
+  background-color: #56565661 !important;
+}
+
+ul#slide-out li.active {
+  background-color: #4e4e4e !important;
+}
+
+ul#slide-out li.active ul {
+  background-color: #676767 !important;
+}
+
+ul#slide-out li.active ul li {
+  color: white !important;
+}
+
+ul#slide-out li.active ul li b,
+ul#slide-out li.active ul li i,
+ul#slide-out li.active ul li a {
+  color: white !important;
+}
+
+ul#slide-out li.active ul li:hover {
+  background-color: #7a7a7a !important;
+}
+
+ul#slide-out div.active {
+  background-color: transparent !important;
+}
+
+ul#usuarios {
+  border: none;
+}
+
+ul#usuarios li div.collapsible-body {
+  color: white !important;
+  border: none !important;
+}
+
+ul#usuarios li div.collapsible-body label {
+  text-align: center !important;
+}
+
+main {
+  color: white;
+  margin-top: 100px !important;
+  margin-bottom: 120px !important;
+}
+
+main small {
+  color: #adadad;
+}
+
+main select {
+  background-color: transparent;
+  border: 0.5px solid #adadad;
+  border-radius: 0%;
+  height: 35px;
+}
+
+main select option {
+  background-color: rgba(0, 0, 0, 0.87);
+}
+
+main input:-webkit-autofill,
+main textarea:-webkit-autofill,
+main select:-webkit-autofill {
+  -webkit-text-fill-color: white !important;
+  -webkit-box-shadow: 0 0 0px 1000px #212121 inset !important;
+          box-shadow: 0 0 0px 1000px #212121 inset !important;
+}
+
+main ::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.212);
+}
+
+main :-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.212);
+}
+
+main ::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.212);
+}
+
+main ::placeholder {
+  color: rgba(255, 255, 255, 0.212);
+}
+
+main div.card.small {
+  border-radius: 0%;
+}
+
+main div.card.small:hover {
+  -webkit-box-shadow: inset 0 0 .2em whitesmoke, 0 0 .2em whitesmoke;
+          box-shadow: inset 0 0 .2em whitesmoke, 0 0 .2em whitesmoke;
+}
+
+main div.card .card-image img {
+  border-radius: 0;
+}
+
+/* Largura da barra de rolagem */
+::-webkit-scrollbar {
+  width: 1px;
+}
+
+/* Fundo da barra de rolagem */
+::-webkit-scrollbar-track-piece {
+  background-color: transparent;
+  z-index: 0;
+}
+
+/* Cor do indicador de rolagem */
+::-webkit-scrollbar-thumb:vertical,
+::-webkit-scrollbar-thumb:horizontal {
+  background-color: red;
+}
+
+/* Cor do indicador de rolagem - ao passar o mouse */
+::-webkit-scrollbar-thumb:vertical:hover,
+::-webkit-scrollbar-thumb:horizontal:hover {
+  background-color: #5cff33;
+}
+
+.card-titulo {
+  background-color: rgba(0, 0, 0, 0.705);
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: .9em;
+}
+/*# sourceMappingURL=layout.css.map */

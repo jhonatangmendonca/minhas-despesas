@@ -1,0 +1,72 @@
+$cor-azul-1: #345D7E;
+$cor-verde-1: #3CB371;
+$cor-vermelha-1: #CD5C5C;
+$cor-cinza-1: #737373;
+$cor-cinza-2: #b6b3ae;
+$cor-branco-1:whitesmoke;
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: $cor-azul-1;
+}
+
+.new-form {
+    width: 100%;
+
+    main {
+        form {
+            div:first-child {
+                box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.5);
+                width: 350px;
+                margin: 0 auto;
+                background-color: whitesmoke;
+                border-radius: 10px;
+                display: grid;
+                justify-content: center;
+                padding: 0;
+                margin-top: 100px;
+            }
+
+            img {
+                width: 200px;
+                margin: 0 auto;
+                margin-top: 10px;
+            }
+
+            .btn-sucesso {
+                background-color: $cor-verde-1;
+                font-weight: 700;
+                font-size: 15px;
+                color: white;
+                width: 125px;
+                padding: 5px;
+            }
+
+            a {
+                font-weight: 700;
+                font-size: 15px;
+                width: 125px;
+                padding: 5px;
+            }
+
+            input {
+                border: 0;
+                border-radius: 0;
+                border-bottom: 0.5px solid $cor-azul-1;
+                background-color: whitesmoke;
+                padding: 0;
+
+                &:focus {
+                    background-color: whitesmoke;
+                    border-color: none !important;
+                    outline: 0;
+                    -webkit-box-shadow: none !important;
+                    box-shadow: none !important;
+                }
+            }
+        }
+    }
+}
