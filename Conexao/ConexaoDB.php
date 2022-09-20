@@ -1,10 +1,8 @@
 <?php
 $Host = 'localhost';
 $Banco = 'MinhasDespesas';
-//$Usuario = 'root';
-//$Senha = 'Jhon@2441MySql';
 $Usuario = 'localhost';
-$Senha = 'localhost@mysql';
+$Senha = 'localhost';
 
 try {
     $Pdo = new PDO('mysql:host=' . $Host . ';dbname=' . $Banco . '', $Usuario, $Senha);
