@@ -2,8 +2,7 @@
 
 $SERVIDOR = "127.0.0.1";
 $USUARIO = "root";
-$SENHA = "Jhon@2441MySql";
-//$SENHA = "";
+$SENHA = "";
 $BANCO = "MinhasDespesas";
 
 $CONEXAO = mysqli_connect($SERVIDOR, $USUARIO, $SENHA, $BANCO);
